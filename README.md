@@ -9,11 +9,29 @@ $ git clone https://github.com/umars-cloudworld/django-todo-app.git
 ```
 You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
 
-Once you have downloaded django, go to the cloned repo directory and run the following command
+Once you have downloaded django, go to the cloned repo directory 
 
 ```bash
-$ cd django-todo-app && python manage.py makemigrations
+$ cd django-todo-app 
 ```
+
+Create virtual environment and activate it
+
+```bash
+$ virtualenv env && source env/bin/activate 
+```
+Now, install django by using the following command
+
+```bash
+$ pip install django
+```
+
+Run the following command
+
+```bash
+$ python manage.py makemigrations
+```
+
 
 This will create all the migrations file (database migrations) required to run this App.
 
